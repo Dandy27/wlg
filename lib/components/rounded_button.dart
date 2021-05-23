@@ -28,7 +28,10 @@ class RoundeButton extends StatelessWidget {
             primary: color,
           ),
           onPressed: press,
-          child: Text(text, style: TextStyle(color: textColor),)),
+          child: Text(
+            text,
+            style: TextStyle(color: textColor),
+          )),
     );
   }
 }
