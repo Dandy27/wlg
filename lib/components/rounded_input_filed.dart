@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wlg/components/text_field_contaiiner.dart';
+import 'package:wlg/constants.dart';
 
 
 class RoundedInputField extends StatelessWidget {
@@ -21,7 +22,7 @@ class RoundedInputField extends StatelessWidget {
           decoration: InputDecoration(
             hintText: hintText,
             border: InputBorder.none,
-            icon: Icon(icon),
+            icon: Icon(icon, color: kPrimaryColor,),
           ),
         ));
   }
