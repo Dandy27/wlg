@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
 
-
 class OrDivider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -17,11 +16,11 @@ class OrDivider extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 10),
             child: Text(
               'OR',
-              style: TextStyle(color: kPrimaryColor, fontWeight: FontWeight.bold),
+              style:
+                  TextStyle(color: kPrimaryColor, fontWeight: FontWeight.bold),
             ),
           ),
           buildExpanded(),
-
         ],
       ),
     );
@@ -30,7 +29,7 @@ class OrDivider extends StatelessWidget {
   Expanded buildExpanded() {
     return Expanded(
       child: Divider(
-        color: Color(0xFFD9D9D9),
+        color: kPrimaryColor,
         height: 1.5,
       ),
     );
