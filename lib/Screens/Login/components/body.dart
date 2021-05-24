@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:wlg/Screens/Login/components/background.dart';
+import 'package:wlg/Screens/Signup/signup_screen.dart';
 import 'package:wlg/components/alread_have_an_account_check.dart';
 import 'package:wlg/components/rounded_button.dart';
 import 'package:wlg/components/rounded_input_filed.dart';
@@ -51,7 +52,14 @@ class Body extends StatelessWidget {
             ),
             AlreadyHaveAnAccountCheck(
               login: true,
-              press: () {},
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) {
+                    return SignUpScreen();
+                  }),
+                );
+              },
             )
           ],
         ),
